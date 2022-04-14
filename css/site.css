@@ -13,8 +13,11 @@ p {
 }
 
 #content {
-  padding: 50px;
-  background-color: PapayaWhip;
   border: solid 1px #B0AEB8;
-  min-height: 80vh;
+  width: auto;
+  min-height: 300px;
+  padding: 10px;
+  margin: auto;
+  border: solid 5px #e3715b;
+  font-size: 20px;
 }
