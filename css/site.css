@@ -23,3 +23,12 @@ img {
     width: 400px;
     height: auto;
 }
+
+#lab4{
+  background-color: #f7d9d0;
+  width: auto;
+  min-height: 300px;
+  margin: auto;
+  border: solid 2px #d4b8b0;
+  font-size: 20px;
+}
