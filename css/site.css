@@ -3,21 +3,23 @@ h1 {
     color: blue;
     font-size: 200%;
     font-style: oblique;
-    font-family: "Comic Sans MS"
+    font-family: "monospace"
 }
 
 p {
     color: green;
-    font-family: monospace;
+    font-family: "monospace";
     font-size: 120%;
 }
 
 #content {
-  border: solid 1px #B0AEB8;
-  width: auto;
-  min-height: 300px;
-  padding: 10px;
-  margin: auto;
-  border: solid 5px #e3715b;
-  font-size: 20px;
+  padding: 50px;
+  background-color: PapayaWhip;
+  border: solid 1px #;
+  min-height: 80vh;
+}
+
+img {
+    width: 400px;
+    height: auto;
 }
