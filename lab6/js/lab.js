@@ -9,7 +9,6 @@
 var myTransport = ['bike', 'bus', 'walking', 'car'];
 
 //Declare object myMainRide
-//Declare object myMainRide
 var myMainRide = {
     make: "Honda",
     model: "Odyssey",
