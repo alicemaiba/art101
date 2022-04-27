@@ -5,14 +5,14 @@
 
 var userName = window.prompt("Hi. Please tell me your name so I can sort it.");
 sortString(userName)
-function sortString(){
+function sortString(s){
    // convert Str to array
-   var array = userName.split('');
+   var array = s.split('');
    // Reverse String
    array.sort();
    // convert array back to string
    var newStr = array.join('');
-   // return the new str
+   // return string
    return newStr;
 }
 
