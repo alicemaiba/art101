@@ -6,16 +6,16 @@
 var userName = window.prompt("Hi. Please tell me your name so I can sort it.");
 sortString(userName);
 function sortString(s){
-   // convert Str to array
-   var array = s.split('');
-   // Reverse String
-   array.sort();
-   // convert array back to string
-   var newS = array.join('');
-   // return string
-   return newS;
+    //convert Str to array
+    var array = s.split('');
+    //Reverse String
+    array.sort();
+    // convert array back to string
+    var newS = array.join('');
+    //return string
+    return newS;
 }
 
- //output
-document.writeln("Oh hey, I've sorted your name:",
-sortString(userName),"</br>");
+//Output
+document.writeln("Oh hey, I've sorted your name with no spaces to make it longer and unique!: ",
+sortString(userName), "</br>");
