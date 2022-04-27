@@ -3,10 +3,9 @@
 // @author Alejandra Sicairos and Alice Aiba
 // @created  4.26.22
 
-
-
+var userName = window.prompt("Hi. Please tell me your name so I can sort it.");
+sortString(userName)
 function sortString(){
-   var userName = window.prompt("Hi. Please tell me your name so I can sort it.");
    // convert Str to array
    var array = userName.split('');
    // Reverse String
