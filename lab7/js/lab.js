@@ -11,9 +11,9 @@ function sortString(s){
    // Reverse String
    array.sort();
    // convert array back to string
-   var newStr = array.join('');
+   var newS = array.join('');
    // return string
-   return newStr;
+   return newS;
 }
 
  //output
