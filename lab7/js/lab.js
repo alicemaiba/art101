@@ -17,5 +17,5 @@ function sortString(s){
 }
 
  //output
- document.writeIn("Oh hey, I've sorted your name:",
+document.writeIn("Oh hey, I've sorted your name:",
 sortString(userName),"</br>");
