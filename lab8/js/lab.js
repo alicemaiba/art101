@@ -1,8 +1,7 @@
-/*
-*Author: Alejandra Sicairos and Alice Aiba
-*Created: 2 May
-*Liscense: Public Domain
-*/
+// Summary: Lab 8: Anon Functions and Callbacks
+// Description: Experiment with JavaScript Functions and Callbacks
+// @author Alejandra Sicairos and Alice Aiba
+// @created  5.2.22
 
 //@param: int/number
 //@output: true or false
@@ -17,7 +16,7 @@ console.log("Is 2 odd?", isOdd(2));
 var array = [35, 888, 2510, 7, 202201, 300, 99];
 console.log("My Array", array);
 
-var evenResult = array.map(isOdd);
+var oddResult = array.map(isOdd);
 // should return [true, false, false, true, true, false, true]
 console.log("Test for oddness of array:", oddResult);
 
