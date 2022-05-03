@@ -6,20 +6,20 @@
 
 //@param: int/number
 //@output: true or false
-function isEven(x){
-  return (x % 2 == 0);
+function isOdd(x){
+  return (x % 2 != 0);
 }
 
 // testing function
-console.log("Is 1 even?", isEven(1));
-console.log("Is 2 even?", isEven(2));
+console.log("Is 1 odd?", isOdd(1));
+console.log("Is 2 odd?", isOdd(2));
 
 var array = [35, 888, 2510, 7, 202201, 300, 99];
 console.log("My Array", array);
 
-var evenResult = array.map(isEven);
-// should return [false, true, true, false, false, true, false]
-console.log("Test for evenness of array:", evenResult);
+var evenResult = array.map(isOdd);
+// should return [true, false, false, true, true, false, true]
+console.log("Test for oddness of array:", oddResult);
 
 var result = array.map(function(x){
     return x / 5;
