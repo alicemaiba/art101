@@ -1,6 +1,8 @@
-img {
+#output{
+    background-color: #808080;
     width: auto;
-    height: 300px;
-    float: right;
-    margin: 10px;
+    min-height: auto;
+    padding: 10px;
+    margin: auto;
+    border: solid 5px #c8a2f5;
 }
