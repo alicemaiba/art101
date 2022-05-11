@@ -2,7 +2,7 @@
 // Description: Experiment with jQuery
 // @author Alice Aiba and Alejandra Sicairos
 // @created 5.10.22
-var colors = ["red", "blue", "yellow", "green", "purple", "#c45672", "brown"];
+var colors = ['red', 'blue', 'yellow', 'green', 'purple', '#c45672', 'brown'];
 //var random_color = colors[Math.floor(Math.random() * colors.length)];
 
 $("#context p").append("<button>Press");
