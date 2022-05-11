@@ -1,10 +1,10 @@
 .selected{
-  color:purple;
+  color: purple;
 }
 
-button{
-  background-color: orange;
-  border-color: white;
-  font-size: 20px;
-  font-family: cursive;
+button {
+    background-color: orange;
+    border-color: white;
+    font-size: 20px;
+    font-family: cursive;
 }
