@@ -9,11 +9,11 @@ $("#context p").append("<button>Press");
 
 $("button").click(function(){
   //$("#content p").toggleClass("selected")
-  var random_color = colors[Math.floor(Math.random() * colors.length)];
-  $("#content p").css('color', random_color);
-});
+   var random_color = colors[Math.floor(Math.random() * colors.length)];
+   $("#content p").css('color', random_color);
+ });
 
-$("button").click(function(){
-  var random_color = colors[Math.floor(Math.random() * colors.length)];
-  $("#button").css('color', random_color);
-});
+ $("button").click(function(){
+     var random_color = colors[Math.floor(Math.random() * colors.length)];
+    $("button").css('color', random_color);
+  });
