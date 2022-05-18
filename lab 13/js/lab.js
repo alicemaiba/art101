@@ -24,4 +24,9 @@ for (var i = 1; i <= 100; i++){
     //if divisable by 3 and 5 bring both fizz and buzz
     console.log(str);
   }
+  $("#output").append("<p>" + str +"</p>");)
 }
+
+$("button").click(function(){
+  var output = FizzBuzz ();
+})
