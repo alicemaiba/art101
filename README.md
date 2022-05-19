@@ -54,7 +54,95 @@ Here is the basic structure with stub or empty files in place.
 │   ├── index.html
 │   └── js
 │       └── lab.js
-└── lab6
+├──lab6
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── lab.js
+│
+├── lab7
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js
+├── lab8
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js
+├── lab9
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js
+├── lab10
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js
+├── lab11
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js
+├── lab12
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js
+├── lab13
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js
+├── lab14
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js
+├── lab15
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js
+├── lab16
+│   ├── css
+│   │   └── lab.css
+│   ├── img
+│   │   └── thing1.jpg
+│   ├── index.html
+│   └── js
+│       └── lab.js      
+└── lab17
     ├── css
     │   └── lab.css
     ├── img
