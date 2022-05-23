@@ -1,30 +1,39 @@
-// Summary: Lab 12: Conditionals
-// Description: Create a function that depends on conditionals
-// @author Alice Aiba and Alejandra Sicairos
-// @Created  5.16.22
+// Summary: Lab 13: Loops
+// Description: Experiment with loops.
+// @author Alejandra Sicairos and Alice Aiba
+// @created  5.17.22
 
-// Create a function sortingHat()
-function sortingHat(str) {
-// counts the letters in str and assigns it to a variable length
-  var length = str.length;
-  console.log(length);
-  // uses modulus (% operator) to get the remainder with 4: mod = length % 4;
-  var remainder = length % 4;
-  if (remainder == 0){
-    return ("Slytherin");
-  }else if (remainder == 1) {
-    return ("Gryffindor");
-  }else if (remainder == 2){
-    return ("Hufflepuff");
-  }else{
-    return ("Ravenclaw");
+//print num 1-any number selected
+function FizzBuzz(input){
+  for (var i = 1; i <= input; i++){
+    var str = i + '. ';
+
+    //if divisable by 3 print fizz
+    if (i % 2 == 0){
+      str += "Fizz";
+    }
+    //if divisable by 5 print buzz
+    if(i % 5 == 0){
+      str += "Buzz";
+    }
+    // divisable by
+    if (i % 9 == 0){
+      str += "Bang";
+    }
+    // if (str == ''){
+    //   console.log(i);
+    // }else{
+    //   //if divisable by 3 and 5 bring both fizz and buzz
+    //   console.log(str);
+    // }
+    $("#output").append("<p>" + str +"</p>");
   }
 }
-//Runs the function after hitting Submit
+
 $("#button").click(function(){
+  //Clears output so that everytime button is clicked its the new number and doesnt add to it
+  $("#output").empty();
+  //input that lets users choose their amount of numbers
   var input = $("#input").val();
-  console.log(input);
-  var output = sortingHat(input);
-  console.log(output);
-  $("#output").html("The Sorting Hat has sorted you into " + output);
+  var output = FizzBuzz(input);
 })
