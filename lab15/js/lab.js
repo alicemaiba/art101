@@ -1,30 +1,35 @@
-// Summary: Lab 12: Conditionals
-// Description: Create a function that depends on conditionals
+// Summary: Lab 15: AJAX
+// Description: Use AJAX to get info from external resources.
 // @author Alice Aiba and Alejandra Sicairos
-// @Created  5.16.22
+// @Created  5.24.22
 
-// Create a function sortingHat()
-function sortingHat(str) {
-// counts the letters in str and assigns it to a variable length
-  var length = str.length;
-  console.log(length);
-  // uses modulus (% operator) to get the remainder with 4: mod = length % 4;
-  var remainder = length % 4;
-  if (remainder == 0){
-    return ("Slytherin");
-  }else if (remainder == 1) {
-    return ("Gryffindor");
-  }else if (remainder == 2){
-    return ("Hufflepuff");
-  }else{
-    return ("Ravenclaw");
-  }
+/* var endpoint = "https://pokeapi.co/api/v2/pokemon/" + pokemon; */
+
+function getAjax(str) {
+$("#output").html("");
+var pokemon = str.toLowerCase();
+//The URL for the request (from the api docs)
+var endpoint = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
+//Usin the core $.ajax() method
+  $.ajax({
+      // API endpoint
+      url: endpoint,
+      // Any data to send
+    	data: { id: 2623},
+      // POST or GET request
+      type: "GET",
+    })
+    .done(function(data) {
+    console.log("works");
+      $("#output").append("<img src=" + data.sprites.front_default + ">");
+    })
+    //What we do if the api fails
+    .fail(function(request, error) {
+      $("#output").html("Error: Check Spelling");
+    });
 }
-//Runs the function after hitting Submit
+
 $("#button").click(function(){
-  var input = $("#input").val();
-  console.log(input);
-  var output = sortingHat(input);
-  console.log(output);
-  $("#output").html("The Sorting Hat has sorted you into " + output);
-})
+	var name = $("#input").val();
+  getAjax(name);
+});
