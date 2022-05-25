@@ -3,8 +3,6 @@
 // @author Alice Aiba and Alejandra Sicairos
 // @Created  5.24.22
 
-/* var endpoint = "https://pokeapi.co/api/v2/pokemon/" + pokemon; */
-
 function getAjax(str) {
 $("#output").html("");
 var pokemon = str.toLowerCase();
