@@ -1,30 +1,49 @@
-// Summary: Lab 12: Conditionals
-// Description: Create a function that depends on conditionals
-// @author Alice Aiba and Alejandra Sicairos
-// @Created  5.16.22
+// Summary: Lab 16: JSON and APIs
+// Description: Experiment with processing JSON from an API.
+// @author Alejandra Sicairos and Alice Aiba
+// @created  5.27.22
 
-// Create a function sortingHat()
-function sortingHat(str) {
-// counts the letters in str and assigns it to a variable length
-  var length = str.length;
-  console.log(length);
-  // uses modulus (% operator) to get the remainder with 4: mod = length % 4;
-  var remainder = length % 4;
-  if (remainder == 0){
-    return ("Slytherin");
-  }else if (remainder == 1) {
-    return ("Gryffindor");
-  }else if (remainder == 2){
-    return ("Hufflepuff");
-  }else{
-    return ("Ravenclaw");
-  }
+//var endpoint = "https://xkcd.com/"+ num + "/info.0.json";
+
+//default num
+var num = 500;
+
+function getAjax(num) {
+var endpoint = "https://xkcd.com/"+ num + "/info.0.json";
+//Clears the canvas
+$("#output").html("");
+  $.ajax({
+      // API endpoint
+      url: endpoint,
+      // Any data to send
+    data: { id: 2623},
+      // POST or GET request
+      type: "GET",
+    })
+    .done(function(data) {
+      $("#output").append('<h3>' + data.title);
+      $("#output").append("<img src=" + data.img + ">");
+      $("#output").append('<br><p>' + data.alt);
+    })
+    .fail(function(request, error) {
+      $("#output").html("Error");
+    });
 }
-//Runs the function after hitting Submit
-$("#button").click(function(){
-  var input = $("#input").val();
-  console.log(input);
-  var output = sortingHat(input);
-  console.log(output);
-  $("#output").html("The Sorting Hat has sorted you into " + output);
-})
+
+$("#random").click(function(){
+//Random Number
+var ranNum = Math.floor(Math.random() * 1000);
+getAjax(ranNum);
+});
+
+$("#next").click(function(){
+num += 1;
+//$("#output").html(num);
+  getAjax(num);
+});
+
+$("#previous").click(function(){
+num -= 1;
+//$("#output").html(num);
+  getAjax(num);
+});
